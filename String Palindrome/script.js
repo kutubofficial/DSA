@@ -15,9 +15,9 @@ function checkPalindrome(str) {
 //*OR
 
 function palindrome(str) {
-  let mid = str.length - 1;
-  for (let i = 0; i <= mid; i++) {
-    if (str[i] !== str[mid - i]) {
+  let strLength = str.length - 1;
+  for (let i = 0; i <= strLength/2; i++) {
+    if (str[i] !== str[strLength - i]) {
       console.log(`${str} is NOT a palindrome`);
       return;
     }
