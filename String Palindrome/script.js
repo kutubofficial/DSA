@@ -1,4 +1,3 @@
-
 //~  Check if a number is a palindrome
 function checkPalindrome(str) {
   //   let s = str.split("");
@@ -16,13 +15,33 @@ function checkPalindrome(str) {
 
 function palindrome(str) {
   let strLength = str.length - 1;
-  for (let i = 0; i <= strLength/2; i++) {
+  for (let i = 0; i <= strLength / 2; i++) {
     if (str[i] !== str[strLength - i]) {
       console.log(`${str} is NOT a palindrome`);
       return;
     }
   }
-      console.log(`${str} is a palindrome`);
+  console.log(`${str} is a palindrome`);
 }
-palindrome("madam");
-palindrome("level");
+// palindrome("madam");
+// palindrome("level");
+
+
+
+
+
+
+
+
+//& PRACTICE
+
+function StringPalindrame(str) {
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(StringPalindrame("kutub"));
+console.log(StringPalindrame("madam"));
