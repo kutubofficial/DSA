@@ -11,7 +11,7 @@ function numberCheck(num) {
 //~ check prime number
 function primeNumber(num) {
   if (num <= 1) {
-    console.log(`${num} is not a prime number.`);
+    console.log(`${num} is not a prime number....`);
     return;
   }
   for (let i = 2; i < num; i++) {
@@ -22,7 +22,7 @@ function primeNumber(num) {
   }
   console.log(`${num} is a prime number.`);
 }
-// primeNumber(7);
+primeNumber(11.5);
 
 //~ Find the factorial of a number
 function factorial(num) {
@@ -37,7 +37,6 @@ function factorial(num) {
 
 
 
-
 // & PRACTICE ANOTHER DAY
 
 function prime(num) {
@@ -48,9 +47,9 @@ function prime(num) {
   }
   return true;
 }
-console.log(prime(8))
-console.log(prime(7))
-console.log(prime(9))
-console.log(prime(11))
-console.log(prime(16))
-console.log(prime(19))
+// console.log(prime(8))
+// console.log(prime(7))
+// console.log(prime(9))
+// console.log(prime(11))
+// console.log(prime(16))
+// console.log(prime(19))
