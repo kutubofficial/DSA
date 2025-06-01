@@ -1,7 +1,18 @@
 //~ Find the least common multiple (LCM)
 
-function LCM(num) {
-    let strNum = num.toString().split("")
-    console.log(strNum)
+function gcd(a, b) {
+  while (b !== 0) {
+    [a, b] = [b, a % b];
+  }
+  return a;
 }
-LCM(24);
+
+function lcm(a, b) {
+  return (a * b) / gcd(a, b);
+}
+
+function findLCM(numbers) {
+  return numbers.reduce((acc, curr) => lcm(acc, curr));
+}
+
+console.log(findLCM([4, 5, 10]));

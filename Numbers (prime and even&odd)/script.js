@@ -22,7 +22,7 @@ function primeNumber(num) {
   }
   console.log(`${num} is a prime number.`);
 }
-primeNumber(11.5);
+// primeNumber(11.5);
 
 //~ Find the factorial of a number
 function factorial(num) {
