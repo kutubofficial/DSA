@@ -39,14 +39,12 @@ secondLargestNumber(arr);
 //! practice
 function larger(arr) {
   let larg = arr[0];
-  let ind = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > larg) {
       larg = arr[i];
-      ind = i;
     }
   }
-  console.log(`here the larg ${larg} and index is ${ind}`);
+  console.log(`here the largest number ${larg}`);
 }
 larger(arr);
 function secLarger(arr) {
