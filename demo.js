@@ -1,3 +1,5 @@
+//* This is the only practice part (if u want actual code checkout the files)
+
 function largestNumber(arr) {
   let theLargestNumberIs = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -39,9 +41,21 @@ function numberPalindrome(num) {
 
 function reverseString(str) {
   let reverseStr = "";
-  for (let i = str.length-1; i >= 0; i--) {
-    reverseStr+=str[i];
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverseStr += str[i];
   }
-  return reverseStr
+  return reverseStr;
 }
-console.log(reverseString("america"))
+// console.log(reverseString("america"))
+
+//! ( 153 → 1³ + 5³ + 3³ = 153)
+function armstrong(num) {
+  let str = num.toString();
+  let total = 0;
+  for (let i = 0; i < str.length; i++) {
+    let number = Number(str[i]);
+    total += Math.pow(number, str.length)
+  }
+  return total
+}
+console.log(armstrong(153));
