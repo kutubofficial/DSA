@@ -34,7 +34,7 @@ function secondLargestNumber(arr) {
   console.log("Second largest number is:", second);
   console.log("index of Second largest number is:", indexOfSecond);
 }
-secondLargestNumber(arr);
+// secondLargestNumber(arr);
 
 //! practice
 function larger(arr) {
@@ -44,7 +44,7 @@ function larger(arr) {
       larg = arr[i];
     }
   }
-  console.log(`here the largest number ${larg}`);
+  // console.log(`here the largest number ${larg}`);
 }
 larger(arr);
 function secLarger(arr) {
@@ -62,4 +62,18 @@ function secLarger(arr) {
   }
   console.log(`here the sec larg ${SECONDLARGER} and index is ${ind}`);
 }
-secLarger(arr);
+// secLarger(arr);
+
+function getLarger(arr) {
+  let larger = arr[0];
+  let firsLargest= -Infinity
+  let secondLargest= -Infinity
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > firsLargest) {
+      secondLargest = firsLargest
+      firsLargest = arr[i]
+    }
+  }
+  return secondLargest
+}
+// console.log(getLarger(arr))

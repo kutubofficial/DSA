@@ -1,6 +1,6 @@
 //~ Check if a number is a palindrome (e.g., 121 → true)
 function palindrome(num) {
-  let string = num.toString();
+  let string = num.toString().trim().toLowerCase(); //this like execute the number and string both
   //const str = String(num);
   for (let i = 0; i < string.length / 2; i++) {
     // console.log(string[i]);
